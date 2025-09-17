@@ -1,0 +1,130 @@
+
+/* Reset + base font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Century Gothic", sans-serif;
+}
+
+header {
+    background-image: url(images/stuff.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Header container with flex */
+.main {
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo + brand */
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 50px;
+    margin-right: 30px;
+}
+.logo .brand {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 15px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li.active a {
+    background-color: #fff;
+    color: #000;
+    border-radius: 4px;
+}
+
+/* Title */
+.title {
+    position: absolute;
+    top: 35%; /* slightly higher for balance */
+    left: 8%;
+    transform: translate(0, -50%);
+    text-align: left;
+    max-width: none; /* remove restriction */
+}
+
+.title h1 {
+    color: #fff;
+    font-size: 90px;      /* BIG like your prototype */
+    font-weight: 400;     /* make it stronger */
+    line-height: 1.3;     /* more spacing */
+    letter-spacing: 3px;  /* more open feel */
+    text-transform: uppercase; /* keeps the bold “WELCOME” feel */
+}
+
+/* Buttons */
+.button {
+    position: absolute;
+    top: 65%;
+    left: 8%;
+    text-align: left;
+}
+
+.btn {
+    border: 1px solid #fff;
+    padding: 12px 24px;
+    color: #fff;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    text-decoration: none;
+    margin-right: 15px;
+    background: transparent;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Special "Learn More" button */
+.btn-black {
+    background: #000;
+    border: none;
+    color: #fff;
+}
+
+.btn-black:hover {
+    background: #333;
+}
+
+.footer-text {
+    position: absolute;
+    bottom: 50px;
+    left: 8%;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    opacity: 0.9; /* slightly softer so it doesn't overpower */
+}
